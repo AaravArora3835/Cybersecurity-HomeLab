@@ -20,8 +20,19 @@ This is my foundational cybersecurity lab for hands-on learning. It includes vir
 - Placeholder Kali Linux VM created ✅  
   ![Both VMs](Screenshots/Placeholder_VMs_2025-09-08.png)  
 
+📑 [Day 1 Notes](Notes/Day1.md)
+
 ---
 
 ## Repository Structure
 - **/Screenshots** → All VM setup screenshots  
+- **/Notes** → Daily lab notes  
 - **README.md** → Roadmap + progress tracker (this file)  
+
+---
+
+## Planned Next Steps
+- Install Windows 10 fully and capture screenshots  
+- Install Kali Linux fully and capture screenshots  
+- Document VM specs and networking configuration in notes  
+- Update repo with Day 2 progress  
