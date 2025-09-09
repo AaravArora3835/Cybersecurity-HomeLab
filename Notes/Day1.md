@@ -15,3 +15,9 @@
 - Install Kali Linux fully and document steps with screenshots  
 - Configure VirtualBox networking modes (NAT, Bridged, Host-Only)  
 - Record system specs and configuration in Notes
+
+## Screenshots
+
+![VirtualBox Installed](../Screenshots/VirtualBox_7.2_Installed_2025-09-08.png)  
+![Windows 10 VM Created](../Screenshots/Windows10_VM_Created_2025-09-08.png)  
+![Placeholder VMs](../Screenshots/Placeholder_VMs_2025-09-08.png)  
