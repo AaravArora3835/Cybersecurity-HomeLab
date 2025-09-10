@@ -1,14 +1,14 @@
 # Day 2 Notes
 
 ## Goal
-Install Windows 10 and Kali Linux fully in VirtualBox.
+Install Windows 10 fully in VirtualBox.
 
 ---
 
 ## Pre-flight Checklist
-- ISOs available locally (Windows 10, Kali Linux)
+- ISOs available locally (Windows 10 ISO downloaded, Kali Linux pending for Day 3)
 - VM resources sized (RAM/CPU/disk)
-- Network mode set (start with NAT)
+- Network mode set (NAT)
 
 ## Pre-flight Screenshots
 ![Win10 VM Settings](../Screenshots/Windows10_VM_Settings_Preflight_2025-09-09.png)  
@@ -28,9 +28,22 @@ Install Windows 10 and Kali Linux fully in VirtualBox.
 
 ---
 
+## Windows 10 Installation
+
+- Mounted ISO in VirtualBox (Storage → Optical Drive)  
+- Selected **Custom Installation** on empty 50 GB disk  
+- Skipped product key (unactivated install)  
+- Created a local account (no Microsoft login)  
+- Windows 10 installed successfully and booted to desktop  
+
+### Installation Screenshots
+![ISO Mounted](../Screenshots/Win10_VM_ISO_Mounted_2025-09-09.png)  
+![Install Start](../Screenshots/Win10_Install_Start_2025-09-09.png)  
+![Windows 10 Desktop](../Screenshots/Win10_Installed_Desktop_2025-09-09.png)  
+
+---
+
 ## Next Steps
-- Mount Windows 10 ISO in VirtualBox  
-- Install Windows 10 fully and take desktop screenshot  
-- Mount Kali Linux ISO in VirtualBox  
-- Install Kali Linux fully and take desktop screenshot  
-- Document installation steps and results
+- Install Kali Linux fully (Day 3)  
+- Document networking modes (NAT, Bridged, Host-Only)  
+- Test connectivity between Windows 10 and Kali VMs  
