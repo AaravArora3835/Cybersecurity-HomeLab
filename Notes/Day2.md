@@ -33,7 +33,8 @@ Install Windows 10 fully in VirtualBox.
 - Mounted ISO in VirtualBox (Storage → Optical Drive)  
 - Selected **Custom Installation** on empty 50 GB disk  
 - Skipped product key (unactivated install)  
-- Created a local account (no Microsoft login)  
+- Created local account: `labuser` / `Lab@1234`  
+- Used simple answers (`cyberlab`) for all security questions  
 - Windows 10 installed successfully and booted to desktop  
 
 ### Installation Screenshots
