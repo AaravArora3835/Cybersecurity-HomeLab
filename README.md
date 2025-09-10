@@ -24,6 +24,14 @@ This is my foundational cybersecurity lab for hands-on learning. It includes vir
 
 ---
 
+## Current Progress (Day 2)
+- Windows 10 installed successfully ✅  
+  ![Windows 10 Desktop](Screenshots/Win10_Installed_Desktop_2025-09-09.png)
+
+📑 [Day 2 Notes](Notes/Day2.md)
+
+---
+
 ## Repository Structure
 - **/Screenshots** → All VM setup screenshots  
 - **/Notes** → Daily lab notes  
@@ -32,7 +40,7 @@ This is my foundational cybersecurity lab for hands-on learning. It includes vir
 ---
 
 ## Planned Next Steps
-- Install Windows 10 fully and capture screenshots  
-- Install Kali Linux fully and capture screenshots  
-- Document VM specs and networking configuration in notes  
-- Update repo with Day 2 progress  
+- Install Kali Linux fully (Day 3) and capture screenshots  
+- Document networking modes (NAT, Bridged, Host-Only)  
+- Test connectivity between Windows 10 and Kali VMs  
+- Continue expanding lab documentation
