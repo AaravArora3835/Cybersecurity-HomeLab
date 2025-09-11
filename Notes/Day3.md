@@ -11,19 +11,19 @@
 - Issue: Installer reported *“No disk drive detected”*  
 - Solution: Added virtual hard disk (`Kali-Linux-Test.vdi`, 20GB) under SATA controller  
 
-📸 `Kali_VM_Storage_Fix_2025-09-10`
+📸 `Kali_VM_Storage_Fix_2025-09-10.png`
 
 ---
 
 ## Installation Steps
 1. Booted with mounted ISO  
-   📸 `Kali_VM_ISO_Mounted_2025-09-10`  
+   📸 `Kali_VM_ISO_Mounted_2025-09-10.png`  
 
 2. Partitioning  
    - Guided – use entire disk  
    - All files in one partition  
    - Confirmed changes written to disk  
-   📸 `Kali_Install_Partition_2025-09-10`  
+   📸 `Kali_Install_Partition_2025-09-10.png`  
 
 3. Software Selection  
    - Desktop Environment: **Xfce**  
@@ -37,7 +37,7 @@
      - Username: `labuser`  
      - Password: `Lab@1234`  
 
-📸 `Kali_Installed_Desktop_2025-09-10`
+📸 `Kali_Installed_Desktop_2025-09-10.png`
 
 ---
 
