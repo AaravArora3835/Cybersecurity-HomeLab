@@ -1,31 +1,54 @@
-# Day 3 Notes
+# Day 3 Notes – Kali Linux Installation
 
-## Goal
-Install Kali Linux fully in VirtualBox.
-
----
-
-## Pre-flight Checklist
-- Kali Linux ISO downloaded from official site (https://www.kali.org/get-kali/#kali-platforms)
-- VM resources sized (RAM/CPU/disk)
-- Network mode set (NAT)
+## Setup Summary
+- Mounted Kali Linux ISO (`kali-linux-2025.2-installer-amd64.iso`)  
+- Fixed missing disk issue by adding a 20GB VDI to VM storage  
+- Booted into **Graphical Install** and completed full setup  
 
 ---
 
-## Kali Linux ISO
+## Fix Applied
+- Issue: Installer reported *“No disk drive detected”*  
+- Solution: Added virtual hard disk (`Kali-Linux-Test.vdi`, 20GB) under SATA controller  
 
-- Downloaded **Kali Linux ISO (kali-linux-2025.2-installer-amd64.iso)**  
-- File size: ~4.2 GB  
-- Saved to: **C:\ISOs\kali-linux-2025.2-installer-amd64.iso**  
-
-### ISO Screenshots
-![Kali ISO Download Page](../Screenshots/Kali_ISO_DownloadPage_2025-09-10.png)  
-![Kali ISO Download Progress](../Screenshots/Kali_ISO_Download_Progress_2025-09-10.png)  
+📸 `Kali_VM_Storage_Fix_2025-09-10`
 
 ---
 
-## Next Steps
-- Mount Kali ISO in VirtualBox (Storage → Optical Drive)  
-- Begin installation process (Custom Install on 20 GB disk)  
-- Create lab user account for Kali  
-- Capture screenshots of install start and desktop after install  
+## Installation Steps
+1. Booted with mounted ISO  
+   📸 `Kali_VM_ISO_Mounted_2025-09-10`  
+
+2. Partitioning  
+   - Guided – use entire disk  
+   - All files in one partition  
+   - Confirmed changes written to disk  
+   📸 `Kali_Install_Partition_2025-09-10`  
+
+3. Software Selection  
+   - Desktop Environment: **Xfce**  
+   - Tools: **top10** and **default** recommended tools  
+
+4. GRUB Bootloader  
+   - Installed to `/dev/sda`  
+
+5. First Boot  
+   - Logged in with:  
+     - Username: `labuser`  
+     - Password: `Lab@1234`  
+
+📸 `Kali_Installed_Desktop_2025-09-10`
+
+---
+
+## Observations
+- Xfce desktop environment runs smoothly under VirtualBox  
+- Networking works under NAT mode (internet accessible)  
+- Both Windows 10 and Kali Linux VMs are now ready for lab use  
+
+---
+
+## Next Steps (Day 4)
+- Configure VirtualBox networking (NAT, Bridged, Host-Only)  
+- Enable shared folders between host and VMs  
+- Take initial networking screenshots and document setup  
