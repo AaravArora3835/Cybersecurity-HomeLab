@@ -14,7 +14,7 @@ This will allow direct communication between the two VMs without using the inter
 - Verified it appeared correctly in the Network Manager.
 
 📸 *Screenshot Evidence:*  
-![Host-only Adapter Created](../Screenshots/HostOnly_Adapter_Created_2025-09-15.png)
+![Host-only Adapter Created](../Screenshots/Host_Only_Adapter_Created_2025-09-15.png)
 
 ---
 
