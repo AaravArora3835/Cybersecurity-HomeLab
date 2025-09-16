@@ -14,7 +14,7 @@ This will allow direct communication between the two VMs without using the inter
 - Verified it appeared correctly in the Network Manager.
 
 📸 *Screenshot Evidence:*  
-- `Screenshots/HostOnly_Adapter_Created_2025-09-15.png`
+![Host-only Adapter Created](../Screenshots/HostOnly_Adapter_Created_2025-09-15.png)
 
 ---
 
@@ -26,7 +26,7 @@ This will allow direct communication between the two VMs without using the inter
 - Saved changes.
 
 📸 *Screenshot Evidence:*  
-- `Screenshots/Kali_VM_Adapter2_HostOnly_2025-09-15.png`
+![Kali VM Adapter2 Host-only](../Screenshots/Kali_VM_Adapter2_HostOnly_2025-09-15.png)
 
 ---
 
@@ -38,7 +38,7 @@ This will allow direct communication between the two VMs without using the inter
 - Saved changes.
 
 📸 *Screenshot Evidence:*  
-- `Screenshots/Windows_VM_Adapter2_HostOnly_2025-09-15.png`
+![Windows VM Adapter2 Host-only](../Screenshots/Windows_VM_Adapter2_HostOnly_2025-09-15.png)
 
 ---
 
