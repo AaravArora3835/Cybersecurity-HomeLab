@@ -12,72 +12,65 @@ This is my foundational cybersecurity lab for hands-on learning. It includes vir
 
 ## Current Progress
 
-### ✅ Day 1 – VirtualBox + Placeholders
-- VirtualBox installed  
-  ![VirtualBox Installed](Screenshots/VirtualBox_7.2_Installed_2025-09-08.png)  
-- Placeholder Windows 10 VM created  
-  ![Windows 10 VM](Screenshots/Windows10_VM_Created_2025-09-08.png)  
-- Placeholder Kali Linux VM created  
-  ![Both VMs](Screenshots/Placeholder_VMs_2025-09-08.png)  
+### ✅ Day 1 – Initial Setup (2025-09-08)
+- Installed VirtualBox.  
+- Created placeholder VMs for Windows 10 and Kali Linux.  
 
-📑 [Day 1 Notes](Notes/Day1.md)
-
----
-
-### ✅ Day 2 – Windows 10 Installation
-- Mounted Windows 10 ISO  
-  ![Win10 ISO Mounted](Screenshots/Win10_VM_ISO_Mounted_2025-09-09.png)  
-- Windows 10 installation in progress  
-  ![Win10 Install Start](Screenshots/Win10_Install_Start_2025-09-09.png)  
-- Windows 10 fully installed with lab user  
-  ![Win10 Installed Desktop](Screenshots/Win10_Installed_Desktop_2025-09-09.png)  
-
-📑 [Day 2 Notes](Notes/Day2.md)
+📸 Evidence:  
+![VirtualBox Installed](Screenshots/VirtualBox_7.2_Installed_2025-09-08.png)  
+![Windows 10 VM](Screenshots/Windows10_VM_Created_2025-09-08.png)  
+![Both VMs](Screenshots/Placeholder_VMs_2025-09-08.png)  
 
 ---
 
-### ✅ Day 3 – Kali Linux Installation
-- Fixed storage issue (added 20GB VDI)  
-  ![Kali Storage Fix](Screenshots/Kali_VM_Storage_Fix_2025-09-10.png)  
-- Mounted Kali ISO  
-  ![Kali ISO Mounted](Screenshots/Kali_VM_ISO_Mounted_2025-09-10.png)  
-- Partitioning confirmed  
-  ![Kali Partition](Screenshots/Kali_Install_Partition_2025-09-10.png)  
-- Kali installed successfully and booted into desktop  
-  ![Kali Desktop](Screenshots/Kali_Installed_Desktop_2025-09-10.png)  
+### ✅ Day 2 – Windows 10 Installation (2025-09-09)
+- Installed Windows 10 in the VM.  
+- Created a local account (`labuser`) using bypass trick.  
+- Captured setup screenshots.  
 
-📑 [Day 3 Notes](Notes/Day3.md)
+📸 Evidence:  
+![Windows Setup Start](Screenshots/Win10_Install_Start_2025-09-09.png)  
+![Windows Setup ISO](Screenshots/Win10_VM_ISO_Mounted_2025-09-09.png)  
 
 ---
 
-### ✅ Day 4 – Repo Upgrade
-- Created **/labs** folder  
-  - Added `Lab_1_Initial_Setup.md` with complete evidence  
-  - Added `Lab_2_Network_Config.md` as template for networking + scans  
-- Created **/Guides** folder  
-  - Added `Guide_VirtualBox_Networking.md` (how-to for NAT, Host-Only, Bridged, Internal)  
-  - Added `Guide_VM_Snapshots.md` (how-to for saving/reverting VM states)  
-- Added **TROUBLESHOOTING.md** with issues/fixes from Day 2–3  
-- Added **RESOURCES.md** with official download links and references  
+### ✅ Day 3 – Kali Linux Installation (2025-09-10)
+- Created 20GB virtual disk and installed Kali Linux.  
+- Used Guided Partitioning.  
+- Booted into fresh Kali environment.  
 
-📑 [Day 4 Notes](Notes/Day4.md)
+📸 Evidence:  
+![Kali VM Disk Fix](Screenshots/Kali_VM_Storage_Fix_2025-09-10.png)  
+![Kali Installer](Screenshots/Kali_Installer_Start_2025-09-10.png)  
+
+---
+
+### ✅ Day 4 – Repo Structure & Docs (2025-09-11)
+- Added `/Labs` for polished writeups.  
+- Added `/Guides` for tutorials.  
+- Added `TROUBLESHOOTING.md` and `RESOURCES.md`.  
+- Logged first troubleshooting entries.  
+
+---
+
+### ✅ Day 5a – Host-Only Adapter Setup (2025-09-15)
+- Installed VirtualBox Extension Pack.  
+- Created a new Host-only Adapter (`VirtualBox Host-Only Ethernet Adapter`).  
+- Configured **Adapter 2 → Host-only** on both Windows and Kali.  
+- Verified network settings via screenshots.  
+
+📸 Evidence:  
+![Host-only Adapter Created](Screenshots/HostOnly_Adapter_Created_2025-09-15.png)  
+![Kali VM Adapter 2 Host-only](Screenshots/Kali_VM_Adapter2_HostOnly_2025-09-15.png)  
+![Windows VM Adapter 2 Host-only](Screenshots/Windows_VM_Adapter2_HostOnly_2025-09-15.png)  
 
 ---
 
 ## Repository Structure
 - **/Screenshots** → All VM setup screenshots  
-- **/Notes** → Daily lab notes (Day 1–Day 4 so far)  
-- **/labs** → Formal lab reports (Lab 1 complete, Lab 2 in progress)  
-- **/Guides** → Step-by-step how-to docs  
-- **TROUBLESHOOTING.md** → Error log + fixes  
-- **RESOURCES.md** → Official references and trusted sources  
-- **README.md** → Roadmap + progress tracker (this file)  
-
----
-
-## Planned Next Steps
-- Configure VirtualBox networking (Host-Only or Internal)  
-- Prove VM-to-VM connectivity with `ping` and document in **Lab 2**  
-- Run first `nmap` scan from Kali → Windows and capture results  
-- Expand troubleshooting log with networking issues  
-- Add more guides (e.g., setting up shared folders, snapshots workflow)
+- **/Notes** → Daily notes (Day 1 → Day 5a so far)  
+- **/Labs** → Polished single-topic reports  
+- **/Guides** → How-to tutorials for VirtualBox and tools  
+- **README.md** → Roadmap + progress tracker  
+- **TROUBLESHOOTING.md** → Running log of issues and fixes  
+- **RESOURCES.md** → Reliable links and references  
