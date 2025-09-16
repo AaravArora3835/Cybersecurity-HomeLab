@@ -49,4 +49,4 @@ A running log of issues and fixes encountered in the home lab.
 4. Verified it appeared in VM settings under Adapter 2.  
 
 **Evidence:**  
-![Host-only Adapter Created](Screenshots/HostOnly_Adapter_Created_2025-09-15.png)  
+![Host-only Adapter Created](Screenshots/Host_Only_Adapter_Created_2025-09-15.png)  
