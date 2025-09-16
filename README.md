@@ -60,7 +60,7 @@ This is my foundational cybersecurity lab for hands-on learning. It includes vir
 - Verified network settings via screenshots.  
 
 📸 Evidence:  
-![Host-only Adapter Created](Screenshots/HostOnly_Adapter_Created_2025-09-15.png)  
+![Host-only Adapter Created](Screenshots/Host_Only_Adapter_Created_2025-09-15.png)  
 ![Kali VM Adapter 2 Host-only](Screenshots/Kali_VM_Adapter2_HostOnly_2025-09-15.png)  
 ![Windows VM Adapter 2 Host-only](Screenshots/Windows_VM_Adapter2_HostOnly_2025-09-15.png)  
 
