@@ -1,18 +1,25 @@
 # RESOURCES
 
-Authoritative, official links used in this project.
+A collection of references used during the home lab setup.
 
-## Virtualization
-- Oracle VirtualBox – https://www.virtualbox.org/
+---
 
-## Operating Systems
-- Windows 10 ISO (Microsoft) – https://www.microsoft.com/software-download/windows10
-- Kali Linux (Get Kali) – https://www.kali.org/get-kali/
+## VirtualBox
+- [VirtualBox Downloads](https://www.virtualbox.org/wiki/Downloads)  
+- [Oracle VM VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads)  
 
-## Kali Docs
-- Downloading Official Kali Images – https://www.kali.org/docs/introduction/download-official-kali-linux-images/
-- Which Image Should I Download? – https://www.kali.org/docs/introduction/what-image-to-download/
+## Windows
+- [Windows 10 ISO (Microsoft)](https://www.microsoft.com/software-download/windows10ISO)  
 
-## Learning & Labs
-- TryHackMe – https://tryhackme.com/
-- CompTIA A+ (official) – https://www.comptia.org/certifications/a
+## Kali Linux
+- [Kali Linux ISO (Official)](https://www.kali.org/get-kali/#kali-virtual-machines)  
+
+## Documentation
+- [TryHackMe Labs](https://tryhackme.com/)  
+- [CompTIA A+ Certification Info](https://www.comptia.org/certifications/a)  
+
+---
+
+## Notes
+- Host-only adapter created under **File → Tools → Network Manager** in VirtualBox 7.x.  
+- Default Host-only network range: `192.168.56.1/24`.  
