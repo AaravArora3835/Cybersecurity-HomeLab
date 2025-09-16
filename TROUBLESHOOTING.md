@@ -44,7 +44,7 @@ The VM was created without a virtual hard disk (only the ISO was attached).
 4. The disk was detected and installation continued with guided partitioning.  
 
 **Evidence:**  
-- ![Kali VM Storage Fix](../Screenshots/Kali_VM_Storage_Fix_2025-09-10.png)  
+- ![Kali VM Storage Fix](Screenshots/Kali_VM_Storage_Fix_2025-09-10.png)  
 
 ---
 
@@ -108,4 +108,4 @@ On VirtualBox 7.x, Host-only adapters must be created first under
 4. Verified it appeared in VM settings under Adapter 2.  
 
 **Evidence:**  
-- ![Host-only Adapter Created](../Screenshots/HostOnly_Adapter_Created_2025-09-15.png)  
+- ![Host-only Adapter Created](Screenshots/HostOnly_Adapter_Created_2025-09-15.png)  
