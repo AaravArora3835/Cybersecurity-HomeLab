@@ -2,7 +2,7 @@
 ---
 
 ## `TROUBLESHOOTING.md` (updated)
-```markdown
+
 # TROUBLESHOOTING
 
 A running log of issues and fixes encountered in the home lab.
