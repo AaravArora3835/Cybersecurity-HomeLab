@@ -1,5 +1,11 @@
 # Cybersecurity Home Lab
 
+> 📘 **Note:**  
+> This repository documents my **step-by-step learning journey** in building a cybersecurity home lab.  
+> It includes both **daily notes** (what I tried, what broke, how I fixed it) and **polished lab reports** (formal write-ups with results and conclusions).  
+> The goal is to show not just what I accomplished, but **how I learned and solved problems along the way** — valuable for both college applications and professional interviews.
+
+
 **Purpose:**  
 This is my foundational cybersecurity lab for hands-on learning. It includes virtual machines running **Windows 10** and **Kali Linux** on **VirtualBox**.
 
