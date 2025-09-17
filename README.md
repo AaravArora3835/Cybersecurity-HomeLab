@@ -41,8 +41,8 @@ This is my foundational cybersecurity lab for hands-on learning. It includes vir
 
 📸 Evidence:  
 ![Kali Storage Fix](Screenshots/Kali_VM_Storage_Fix_2025-09-10.png)  
-![Kali Installer Start](Screenshots/Kali_Installer_Start_2025-09-10.png)  
-![Kali Desktop](Screenshots/Kali_Desktop_2025-09-10.png)  
+![Kali Installer Start](Screenshots/Kali_Install_Start_2025-09-10.png)  
+![Kali Desktop](Screenshots/Kali_Installed_Desktop_2025-09-10.png)  
 
 ---
 
@@ -61,7 +61,7 @@ This is my foundational cybersecurity lab for hands-on learning. It includes vir
 - Verified configurations via screenshots  
 
 📸 Evidence:  
-![Host-only Adapter Created](Screenshots/HostOnly_Adapter_Created_2025-09-15.png)  
+![Host-only Adapter Created](Screenshots/Host_Only_Adapter_Created_2025-09-15.png)  
 ![Kali VM Adapter2 Host-only](Screenshots/Kali_VM_Adapter2_HostOnly_2025-09-15.png)  
 ![Windows VM Adapter2 Host-only](Screenshots/Windows_VM_Adapter2_HostOnly_2025-09-15.png)  
 
@@ -75,5 +75,5 @@ This is my foundational cybersecurity lab for hands-on learning. It includes vir
 
 📸 Evidence:  
 ![Kali Ping Fail](Screenshots/Kali_Ping_Windows_Fail_2025-09-16.png)  
-![Windows Firewall ICMP Enabled](Screenshots/Windows_Firewall_ICMP_Enabled_2025-09-16.png)  
+![Windows Firewall ICMP Enabled](Screenshots/Windows_Firewall_ICMP_Enable_2025-09-16.png)  
 ![Kali Ping Success](Screenshots/Kali_Ping_Windows_Success_2025-09-16.png)  
