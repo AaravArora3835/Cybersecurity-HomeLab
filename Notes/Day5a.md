@@ -55,4 +55,3 @@ On **Day 5b**, we will:
 - Boot both VMs.
 - Run `ipconfig` (Windows) and `ip addr` (Kali) to confirm IPs.
 - Test connectivity with `ping`.
-- Run an initial `nmap` scan from Kali to Windows.
