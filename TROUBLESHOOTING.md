@@ -40,7 +40,7 @@ A running log of issues and fixes encountered in the home lab.
 4. Adapter then appeared under VM → Settings → Network → Adapter 2  
 
 📸 *Evidence:*  
-![Host-only Adapter Created](Screenshots/HostOnly_Adapter_Created_2025-09-15.png)
+![Host-only Adapter Created](Screenshots/Host_Only_Adapter_Created_2025-09-15.png)
 
 ---
 
@@ -56,5 +56,5 @@ A running log of issues and fixes encountered in the home lab.
 
 📸 *Evidence:*  
 ![Kali Ping Fail](Screenshots/Kali_Ping_Windows_Fail_2025-09-16.png)  
-![Windows Firewall ICMP Enabled](Screenshots/Windows_Firewall_ICMP_Enabled_2025-09-16.png)  
+![Windows Firewall ICMP Enabled](Screenshots/Windows_Firewall_ICMP_Enable_2025-09-16.png)  
 ![Kali Ping Success](Screenshots/Kali_Ping_Windows_Success_2025-09-16.png)
