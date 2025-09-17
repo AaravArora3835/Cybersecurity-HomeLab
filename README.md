@@ -24,7 +24,7 @@ A step-by-step documentation of building and configuring a personal cybersecurit
 - Added first screenshots
 
 **Evidence:**  
-![VirtualBox Installed](Screenshots/VirtualBox_Install_2025-09-07.png)
+![VirtualBox Installed](Screenshots/VirtualBox_7.2_Installed_2025-09-08.png)
 
 ---
 
