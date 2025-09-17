@@ -1,8 +1,3 @@
-
----
-
-## `TROUBLESHOOTING.md` (updated)
-
 # TROUBLESHOOTING
 
 A running log of issues and fixes encountered in the home lab.
