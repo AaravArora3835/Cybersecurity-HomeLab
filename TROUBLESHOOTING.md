@@ -1,3 +1,8 @@
+
+---
+
+## `TROUBLESHOOTING.md` (updated)
+```markdown
 # TROUBLESHOOTING
 
 A running log of issues and fixes encountered in the home lab.
@@ -9,7 +14,7 @@ A running log of issues and fixes encountered in the home lab.
 **Fixes tried:**  
 - Fake email trick → inconsistent in 22H2  
 - ✅ **Solved:** `Shift + F10` → `OOBE\BYPASSNRO` (reboot) → “I don’t have Internet” → local account  
-- Alt method: temporarily disable VM network adapter, then continue with limited setup  
+- Alt method: disable VM network adapter, then continue with limited setup  
 
 ---
 
@@ -19,34 +24,27 @@ A running log of issues and fixes encountered in the home lab.
 **Fix:**  
 - Add new **VDI** (20 GB) under **SATA**  
 - Boot installer again → disk detected → guided partition OK  
-
 **Evidence:**  
-![Kali VM Storage Fix](Screenshots/Kali_VM_Storage_Fix_2025-09-10.png)  
-
----
-
-## 2025-09-10 – Windows ICMP blocked (if ping fails later)
-**Symptom:** Kali → Windows ping fails  
-**Fix:** Enable Windows Defender Firewall inbound rule: **File and Printer Sharing (Echo Request – ICMPv4-In)**  
-
----
-
-## 2025-09-10 – No Host-Only IP addresses
-**Symptom:** No `192.168.56.x` on VM  
-**Fix:**  
-- Ensure Adapter 2 = Host-Only is enabled in VM settings  
-- In guest: disable/enable the interface or reboot  
+![Kali VM Storage Fix](Screenshots/Kali_VM_Storage_Fix_2025-09-10.png)
 
 ---
 
 ## 2025-09-15 – Missing Host-Only Adapter Option
-**Symptom:** In VM → Settings → Network, only Adapter 1 was visible.  
-**Root Cause:** On VirtualBox 7.x, Host-only adapters must be created first under **File → Tools → Network Manager**.  
+**Symptom:** No Adapter 2 available in VM network settings  
+**Root Cause:** Host-only adapter wasn’t created globally  
 **Fix:**  
-1. Installed the VirtualBox Extension Pack from the official VirtualBox site.  
-2. Navigated to **File → Tools → Network Manager**.  
-3. Created a new Host-only Adapter (`VirtualBox Host-Only Ethernet Adapter`).  
-4. Verified it appeared in VM settings under Adapter 2.  
-
+1. Installed VirtualBox Extension Pack  
+2. File → Tools → Network Manager → Created Host-only Adapter  
+3. Adapter now appears in VM settings  
 **Evidence:**  
-![Host-only Adapter Created](Screenshots/Host_Only_Adapter_Created_2025-09-15.png)  
+![Host-only Adapter Created](Screenshots/HostOnly_Adapter_Created_2025-09-15.png)
+
+---
+
+## 2025-09-15 – Kali to Windows Ping Fails
+**Symptom:** Ping from Kali to Windows timed out  
+**Cause:** Windows Firewall blocked ICMP requests  
+**Fix:** Enabled inbound rule **File and Printer Sharing (Echo Request – ICMPv4-In)**  
+**Evidence:**  
+- Before: ![Kali Ping Fail](Screenshots/Kali_Ping_Fail_2025-09-15.png)  
+- After: ![Kali Ping Success](Screenshots/Kali_Ping_Success_2025-09-15.png)
