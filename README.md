@@ -6,13 +6,13 @@ A step-by-step documentation of building and configuring a personal cybersecurit
 
 ## Repository Structure
 
-/Notes → Daily logs (Day1, Day2, ...)
-/Screenshots → Captured evidence for each step
-/Labs → Formal write-ups of completed labs
-/Guides → How-to guides (VirtualBox, Snapshots, Networking)
-TROUBLESHOOTING.md
-RESOURCES.md
-README.md
+- /Notes → Daily logs (Day1, Day2, ...)
+- /Screenshots → Captured evidence for each step
+- /Labs → Formal write-ups of completed labs
+- /Guides → How-to guides (VirtualBox, Snapshots, Networking)
+- TROUBLESHOOTING.md
+- RESOURCES.md
+- README.md
 
 ---
 
