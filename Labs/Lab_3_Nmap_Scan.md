@@ -52,8 +52,7 @@ This lab successfully used nmap from Kali to discover the Windows 10 VM and atte
 As my first scanning lab, it bridges connectivity (Lab 2) and network reconnaissance.
 
 ## Next Steps
-- **Lab 4 (optional):** Explore what happens when services are manually enabled (e.g., enabling SMB or RDP).
-- Build guides for common scanning techniques.
+- None for now...
 
 ## References
 - [Nmap Reference Guide](https://nmap.org/book/man.html)
