@@ -58,3 +58,14 @@ A running log of issues and fixes encountered in the home lab.
 ![Kali Ping Fail](Screenshots/Kali_Ping_Windows_Fail_2025-09-16.png)  
 ![Windows Firewall ICMP Enabled](Screenshots/Windows_Firewall_ICMP_Enable_2025-09-16.png)  
 ![Kali Ping Success](Screenshots/Kali_Ping_Windows_Success_2025-09-16.png)
+
+---
+
+## 2025-09-19 – Kali → Windows ping blocked
+**Symptom:** Ping from Kali to Windows failed (Destination Host Unreachable).  
+**Root Cause:** Windows Firewall blocked ICMP echo requests.  
+**Fix:** Enabled inbound rule: File and Printer Sharing (Echo Request – ICMPv4-In).  
+**Evidence:**  
+![Fail](Screenshots/Kali_Ping_Windows_Fail_2025-09-16.png)  
+![Fix](Screenshots/Windows_Firewall_ICMP_Enable_2025-09-16.png)  
+![Success](Screenshots/Kali_Ping_Windows_Success_2025-09-16.png)
