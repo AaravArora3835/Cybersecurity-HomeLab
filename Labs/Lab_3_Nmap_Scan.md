@@ -25,6 +25,7 @@ As a student building my first scanning lab, this exercise helps me understand h
 - Result: Host is up.
 
 📸 Evidence:
+
 ![Host Discovery Scan](../Screenshots/Kali_Nmap_HostDiscovery_2025-09-20.png)
 
 ### Phase 3: Run Service & Version Detection
@@ -33,6 +34,7 @@ As a student building my first scanning lab, this exercise helps me understand h
 - Result: All 1000 TCP ports filtered (Windows Firewall blocked responses).
 
 📸 Evidence:
+
 ![Service Detection Scan](../Screenshots/Kali_Nmap_ServiceScan_2025-09-20.png)
 
 ## Evidence of Success
