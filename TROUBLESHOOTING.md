@@ -69,3 +69,13 @@ A running log of issues and fixes encountered in the home lab.
 ![Fail](Screenshots/Kali_Ping_Windows_Fail_2025-09-16.png)  
 ![Fix](Screenshots/Windows_Firewall_ICMP_Enable_2025-09-16.png)  
 ![Success](Screenshots/Kali_Ping_Windows_Success_2025-09-16.png)
+
+---
+
+## 2025-09-20 – Nmap service scan returned filtered ports
+**Symptom:** `nmap -sV` returned "All 1000 scanned ports ... filtered (no-response)".  
+**Root Cause:** Windows Firewall blocked incoming probes/responses by default.  
+**Fix / Note:** This is expected on a default Windows install; enable only required services (and firewall rules) if intentional testing is needed.  
+**Evidence:**  
+![Host Discovery](Screenshots/Kali_Nmap_HostDiscovery_2025-09-20.png)  
+![Service Scan](Screenshots/Kali_Nmap_ServiceScan_2025-09-20.png)
