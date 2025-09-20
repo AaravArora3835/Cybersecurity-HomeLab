@@ -83,3 +83,19 @@ This is my foundational cybersecurity lab for hands-on learning. It includes vir
 ![Kali Ping Fail](Screenshots/Kali_Ping_Windows_Fail_2025-09-16.png)  
 ![Windows Firewall ICMP Enabled](Screenshots/Windows_Firewall_ICMP_Enable_2025-09-16.png)  
 ![Kali Ping Success](Screenshots/Kali_Ping_Windows_Success_2025-09-16.png)  
+
+---
+
+### ✅ Day 6 – Lab 2: Networking & Connectivity (2025-09-19)
+- Configured Host-Only networking alongside NAT.
+- Verified Windows + Kali received IPs in the 192.168.56.x subnet.
+- Initial Kali → Windows ping failed (ICMP blocked).
+- Fixed by enabling Windows Firewall rule (Echo Request – ICMPv4-In).
+- Retested → success. Also confirmed optional Windows → Kali ping.
+
+📸 Evidence:
+![Kali Ping Fail](Screenshots/Kali_Ping_Windows_Fail_2025-09-16.png)
+![Firewall Rule Enabled](Screenshots/Windows_Firewall_ICMP_Enable_2025-09-16.png)
+![Kali Ping Success](Screenshots/Kali_Ping_Windows_Success_2025-09-16.png)
+
+
