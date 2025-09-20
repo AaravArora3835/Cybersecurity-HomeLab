@@ -1,90 +1,89 @@
-# Lab 1 – Building the Foundational Home Lab Environment
+# Lab 2 – VirtualBox Host-Only Networking & VM Connectivity
 
 ## Objective
-To successfully create a self-contained, secure environment for cybersecurity practice by installing and configuring Oracle VirtualBox, a Windows 10 client machine, and a Kali Linux test machine.
+To configure a VirtualBox Host-Only network so Windows 10 and Kali Linux virtual machines can communicate directly with each other while retaining internet access through NAT.
 
 ## Introduction
-A controlled, isolated lab is the first and most critical step for hands-on cybersecurity learning. It provides a safe sandbox to practice techniques, test tools, and make mistakes without impacting real systems.  
+Networking between virtual machines is an essential skill in cybersecurity. This lab demonstrates how to configure both NAT and Host-Only networking in VirtualBox, verify VM IP addresses, and test connectivity using ping.
 
-This is my **first ever cybersecurity lab as a student**, and it represents the foundation for all my future hands-on learning. By documenting the full process, I can show both my technical progress and my growth as a learner.
+This is my **first networking lab as a student**, and it represents my first step into configuring and troubleshooting communication between systems in an isolated environment.
 
 ## Tools Used
-- **Hypervisor:** Oracle VirtualBox 7.2
-- **OS Images:**
+- **Hypervisor:** Oracle VirtualBox 7.2 (with Extension Pack)
+- **Operating Systems:**
   - Microsoft Windows 10 (22H2)
   - Kali Linux (2025.2)
 - **Host Machine:** Windows 11 Home, Intel i7-12700H, 16 GB RAM, 512 GB SSD
 
 ## Methodology
 
-### Phase 1: Hypervisor Preparation
-1. Downloaded the latest Oracle VirtualBox installer (`VirtualBox-7.2.0-161176-Win.exe`).
-2. Ran the installer with default settings to install VirtualBox and necessary network drivers on the host machine.
-3. Verified the installation by launching the VirtualBox Manager interface.
+### Phase 1: Host-Only Adapter Creation
+1. Installed the VirtualBox Extension Pack.
+2. Opened Tools → Network Manager.
+3. Created a new Host-Only Adapter (`VirtualBox Host-Only Ethernet Adapter`).
+4. Verified that the adapter appeared globally in VirtualBox.
 
-### Phase 2: Virtual Machine Creation
-1. **Windows 10 VM:**
-    - Name: `Windows 10 - Client`
-    - Type: Microsoft Windows
-    - Version: Windows 10 (64-bit)
-    - Memory: 4096 MB (4 GB)
-    - Hard Disk: VDI, Dynamically allocated, **50 GB**
-2. **Kali Linux VM:**
-    - Name: `Kali Linux - Test`
-    - Type: Linux
-    - Version: Debian (64-bit)
-    - Memory: 4096 MB (4 GB)
-    - Hard Disk: VDI, Dynamically allocated, **20 GB**
-3. Verified both placeholder VMs were present in the VirtualBox Manager.
+### Phase 2: VM Network Configuration
+1. Edited the Windows 10 and Kali Linux VMs.
+2. Set Adapter 1 = NAT (internet access).
+3. Set Adapter 2 = Host-Only (private VM-to-VM communication).
+4. Booted both VMs and confirmed network adapter settings.
 
-### Phase 3: Operating System Installation
-1. **Installing Windows 10:**
-    - Mounted the Windows 10 ISO (`Win10_22H2_English_x64v1.iso`) to the VM.
-    - Booted the VM and followed the graphical installer.
-    - Selected "Custom: Install Windows only," and installed to the unallocated space.
-    - Created a local user account: `labuser` with password `Lab@1234`.
-    - Rebooted into the new Windows 10 desktop.
-2. **Installing Kali Linux:**
-    - Mounted the Kali Linux ISO to the VM.
-    - Initially failed with **"No disk drive detected."**
-    - **Fix:** Added `Kali-Linux-Test.vdi` (20 GB) under **Controller: SATA**.
-    - Rebooted VM → “Graphical Install.”
-    - Used guided partitioning for the entire disk.
-    - Selected `Xfce` desktop environment with default tools.
-    - Installed GRUB bootloader to `/dev/sda`.
-    - Rebooted and logged in as `labuser`.
+### Phase 3: IP Verification
+1. On Windows, ran `ipconfig` and noted a Host-Only IP in the range 192.168.56.x.
+2. On Kali, ran `ip -4 a` and confirmed an IP in the same subnet.
+
+### Phase 4: Connectivity Test (Kali → Windows)
+1. From Kali, attempted to ping the Windows Host-Only IP.
+   - Command: `ping -c 4 192.168.56.101`
+   - Result: ❌ Failed — Destination Host Unreachable.
+2. Identified root cause: Windows Firewall blocks ICMP by default.
+3. Fix: Enabled inbound rule **File and Printer Sharing (Echo Request – ICMPv4-In)**.
+4. Retested ping: ✅ Success — 0% packet loss.
+
+### Phase 5: Optional Connectivity Test (Windows → Kali)
+1. From Windows, pinged Kali’s Host-Only IP.
+   - Command: `ping 192.168.56.102`
+   - Result: ✅ Success — Linux accepts ICMP by default.
 
 ## Evidence of Success
-- **VirtualBox Manager Installed**  
-  ![VirtualBox Installed](../Screenshots/VirtualBox_7.2_Installed_2025-09-08.png)  
+- **Host-Only Adapter Created**
+  ![Host-Only Adapter Created](../Screenshots/Host_Only_Adapter_Created_2025-09-15.png)
 
-- **Placeholder VMs Created**  
-  ![Placeholder VMs](../Screenshots/Placeholder_VMs_2025-09-08.png)  
+- **VMs Configured with Host-Only Adapter**
+  ![Kali Adapter2 Host-Only](../Screenshots/Kali_VM_Adapter2_HostOnly_2025-09-15.png)
+  ![Windows Adapter2 Host-Only](../Screenshots/Windows_VM_Adapter2_HostOnly_2025-09-15.png)
 
-- **Windows 10 Installation**  
-  ![Win10 Install Start](../Screenshots/Win10_Install_Start_2025-09-09.png)  
-  ![Win10 Installed Desktop](../Screenshots/Win10_Installed_Desktop_2025-09-09.png)  
+- **Host-Only IPs Assigned**
+  ![Windows Host-Only IP](../Screenshots/Windows_VM_HostOnly_IP_2025-09-16.png)
+  ![Kali Host-Only IP](../Screenshots/Kali_VM_HostOnly_IP_2025-09-16.png)
 
-- **Kali Linux Installation**  
-  ![Kali Storage Fix](../Screenshots/Kali_VM_Storage_Fix_2025-09-10.png)  
-  ![Kali Installed Desktop](../Screenshots/Kali_Installed_Desktop_2025-09-10.png)  
+- **Ping Fail (Before Firewall Fix)**
+  ![Kali Ping Fail](../Screenshots/Kali_Ping_Windows_Fail_2025-09-16.png)
+
+- **Firewall Rule Enabled**
+  ![Firewall Rule Enabled](../Screenshots/Windows_Firewall_ICMP_Enable_2025-09-16.png)
+
+- **Ping Success (After Firewall Fix)**
+  ![Kali Ping Success](../Screenshots/Kali_Ping_Windows_Success_2025-09-16.png)
+
+- **Optional: Windows → Kali Ping**
+  ![Windows Ping Kali](../Screenshots/Windows_Ping_Kali_2025-09-16.png)
 
 ## Analysis & Observations
-- **Resource Allocation:** 4 GB RAM per VM was sufficient for smooth performance on a 16 GB host.  
-- **Troubleshooting:** The Kali Linux installer required a virtual hard disk to be explicitly added. Documenting this is useful for future labs and others repeating the setup.  
-- **Networking:** NAT networking provided immediate internet access for updates.  
-- **Isolation:** Both VMs are isolated from each other and the host, which is the safest initial configuration.
+- **Design Choice:** NAT + Host-Only gives internet access plus a private network for testing.
+- **Troubleshooting:** The main blocker was Windows Firewall; enabling ICMP echo was the key fix.
+- **Security Insight:** Windows defaults to blocking ICMP (secure by default), while Kali allows ICMP (open by default).
 
 ## Conclusion
-The foundational home lab environment was built successfully. Two primary operating systems used in cybersecurity, Windows 10 and Kali Linux, are now installed and operational within the isolated VirtualBox environment. This provides a clean, safe platform for all subsequent security labs.  
+This lab successfully established isolated VM-to-VM connectivity while retaining internet access.
 
-As my **first student lab**, this project demonstrates not only my ability to set up and troubleshoot a virtualization environment, but also my commitment to learning cybersecurity step by step. It marks the beginning of my hands-on journey.
+As my **first networking lab**, it strengthened my understanding of VirtualBox networking and taught me how to identify and resolve firewall-related issues logically. The lab environment is now ready for network scanning exercises.
 
 ## Next Steps
-This lab enables the next phase of training:
-- **Lab 2:** Configuring Host-Only Networking and Establishing VM-to-VM Connectivity.
-- **Lab 3:** Conducting Basic Network Reconnaissance with `ping` and `nmap`.
+- **Lab 3:** Run an `nmap` scan from Kali against the Windows VM and analyze discovered services.
 
 ## References
-- [Oracle VirtualBox Manual](https://www.virtualbox.org/manual/)  
+- [Oracle VirtualBox Manual](https://www.virtualbox.org/manual/)
+- [Microsoft Docs – Windows Defender Firewall](https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/)
 - [Kali Linux Documentation](https://www.kali.org/docs/)
