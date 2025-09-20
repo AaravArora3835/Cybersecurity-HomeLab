@@ -3,7 +3,7 @@
 > 📘 **Note:**  
 > This repository documents my **step-by-step learning journey** in building a cybersecurity home lab.  
 > It includes both **daily notes** (what I tried, what broke, how I fixed it) and **polished lab reports** (formal write-ups with results and conclusions).  
-> The goal is to show not just what I accomplished, but **how I learned and solved problems along the way** — valuable for both college applications and professional interviews.
+> The goal is to show not just what I accomplished, but **how I learned and solved problems along the way**.
 
 
 **Purpose:**  
@@ -98,4 +98,14 @@ This is my foundational cybersecurity lab for hands-on learning. It includes vir
 ![Firewall Rule Enabled](Screenshots/Windows_Firewall_ICMP_Enable_2025-09-16.png)
 ![Kali Ping Success](Screenshots/Kali_Ping_Windows_Success_2025-09-16.png)
 
+---
 
+### ✅ Day 7 – Lab 3: Nmap Scan (2025-09-20)
+- Verified Windows Host-Only IP using ipconfig.
+- From Kali, ran nmap host discovery and service/version detection scans.
+- Host responded, but service scan showed all ports filtered (Windows Firewall blocking).
+- This confirmed connectivity and demonstrated secure-by-default Windows settings.
+
+📸 Evidence:
+![Nmap Host Discovery](Screenshots/Kali_Nmap_HostDiscovery_2025-09-20.png)
+![Nmap Service Detection](Screenshots/Kali_Nmap_ServiceScan_2025-09-20.png)
