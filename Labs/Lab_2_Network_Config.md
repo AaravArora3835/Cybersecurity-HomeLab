@@ -67,9 +67,6 @@ This is my **first networking lab as a student**, and it represents my first ste
 - **Ping Success (After Firewall Fix)**
   ![Kali Ping Success](../Screenshots/Kali_Ping_Windows_Success_2025-09-16.png)
 
-- **Optional: Windows → Kali Ping**
-  ![Windows Ping Kali](../Screenshots/Windows_Ping_Kali_2025-09-16.png)
-
 ## Analysis & Observations
 - **Design Choice:** NAT + Host-Only gives internet access plus a private network for testing.
 - **Troubleshooting:** The main blocker was Windows Firewall; enabling ICMP echo was the key fix.
