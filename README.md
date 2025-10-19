@@ -1,7 +1,7 @@
 # Cybersecurity Home Lab
 
 ## Highlights
-This is my **first fully documented cybersecurity home lab**, built from scratch using Oracle VirtualBox.  
+This is my first fully documented cybersecurity home lab, built from scratch using Oracle VirtualBox.  
 It demonstrates that I can install and configure virtual machines, set up isolated networking, troubleshoot connectivity issues, and perform basic reconnaissance scans with nmap.  
 
 By combining **daily notes**, **polished lab reports**, **guides**, and **troubleshooting logs**, this repo shows not only what I accomplished but also **how I learned, solved problems, and documented professionally**.  
@@ -140,6 +140,14 @@ Examples of issues solved:
 - Add a third VM (Ubuntu server or Metasploitable) for advanced labs  
 - Document TryHackMe practice labs in a separate repo  
 - Begin certification-focused repos (CompTIA ITF+, A+)  
+
+## Part of Larger Journey
+
+**Full Portfolio:** [Cybersecurity-Portfolio-Hub](https://github.com/AaravArora3835/Cybersecurity-Portfolio-Hub)
+
+**Related Projects:**
+- [SecureScholar Platform](https://github.com/AaravArora3835/SecureScholar-Platform) — Gamified cybersecurity learning platform  
+- [Google Cybersecurity Certificate](https://github.com/AaravArora3835/Google-Cybersecurity-Certificate) — Foundational certification journey  
 
 ---
 
