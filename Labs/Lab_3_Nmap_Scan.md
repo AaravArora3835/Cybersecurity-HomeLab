@@ -42,9 +42,13 @@ As a student building my first scanning lab, this exercise helps me understand h
 - Service detection scan returned filtered ports, consistent with Windows Firewall defaults.
 
 ## Analysis & Observations
-- Connectivity verified — Windows responded to host discovery.
+## Analysis & Observations
+- Connectivity verified — Windows responded to host discovery probes.
 - Service scan returned only filtered ports, showing Windows Firewall is blocking probes.
-- Security Insight: A default Windows 10 system is not openly exposing services, demonstrating secure-by-default configurations.
+- **Security Insight:** The filtered ports result is significant from a defensive perspective. Unlike "closed" ports (which respond with RST packets), "filtered" indicates a firewall is actively dropping packets. This tells an attacker that: (1) a firewall exists, (2) it's configured to silently drop unauthorized traffic, and (3) further enumeration requires firewall bypass techniques. In a real assessment, this would inform the next phase of testing.
+- A default Windows 10 system demonstrates secure-by-default configurations with no openly exposed services.
+
+---
 
 ## Conclusion
 This lab successfully used nmap from Kali to discover the Windows 10 VM and attempt service enumeration. The lack of open ports highlights how firewalls protect systems from reconnaissance.
