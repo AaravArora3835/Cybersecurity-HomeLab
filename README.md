@@ -56,8 +56,6 @@ This lab provided the foundation for hands-on practice while pursuing CompTIA Se
 
 ## Part of Larger Journey
 
-**Full Portfolio:** [Cybersecurity-Portfolio-Hub](https://github.com/AaravArora3835/Cybersecurity-Portfolio-Hub)
-
 **Related Projects:**
 - [SecureScholar Platform](https://github.com/AaravArora3835/SecureScholar-Platform) — Gamified cybersecurity learning platform  
 - [Google Cybersecurity Certificate](https://github.com/AaravArora3835/Google-Cybersecurity-Certificate) — Foundational certification journey
