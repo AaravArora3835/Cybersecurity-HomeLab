@@ -1,4 +1,4 @@
-# Cybersecurity Home Lab
+# VM-Setup-and-Labs
 
 ## Overview
 Self-contained virtualized environment for practicing cybersecurity fundamentals safely. Demonstrates VM configuration, network isolation, and basic reconnaissance skills.
